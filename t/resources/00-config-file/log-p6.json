@@ -1,0 +1,40 @@
+{
+	"writers": [
+		{
+			"type": "custom",
+			"require": "LogP6::WriterConf::StackDriver",
+			"fqn-class": "LogP6::WriterConf::StackDriver",
+			"args": {
+				"name": "stackdriver-1",
+				"use-mdc": true
+			}
+		},
+		{
+			"type": "custom",
+			"require": "LogP6::WriterConf::StackDriver",
+			"fqn-class": "LogP6::WriterConf::StackDriver",
+			"args": {
+				"name": "stackdriver-2"
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "std",
+			"name": "stackdriver",
+			"level": "trace"
+		}
+	],
+	"cliches": [
+		{
+			"name": "stackdriver-1",
+			"matcher": "stackdriver-1",
+			"grooves": [ "stackdriver-1", "stackdriver" ]
+		},
+		{
+			"name": "stackdriver-2",
+			"matcher": "stackdriver-2",
+			"grooves": [ "stackdriver-2", "stackdriver" ]
+		}
+	]
+}
