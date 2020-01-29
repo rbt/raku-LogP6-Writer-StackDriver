@@ -56,8 +56,9 @@ cliche(
 my $app = route {
   get -> 'healthz' {
 
-    # Note, only that instance of $log will have the MDC information. Consider creating
-    # a context object for the request and passing it along the work pipeline.
+    # Note, any instance of 'audit' log will have the MDC information only in
+    # the current Thread. Consider creating a context object for the request
+    # and passing it along the work pipeline.
     my $log = get-logger('audit');
     $log.mdc-put('webapp-request', request());
     $log.debug('Request for healthz');
