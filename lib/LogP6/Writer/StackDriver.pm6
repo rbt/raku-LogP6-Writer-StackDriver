@@ -4,6 +4,8 @@ use JSON::Fast;
 
 my constant MAX_LOG_MESSAGE = 1000;
 
+# Based on this logging facility:
+# https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry
 class LogP6::Writer::StackDriver does LogP6::Writer {
 	has IO::Handle:D $.handle is required;
     has Bool $.use-mdc is required;
