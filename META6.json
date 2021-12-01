@@ -13,11 +13,11 @@
   "license": "Artistic-2.0",
   "meta-version": "1",
   "name": "LogP6::Writer::StackDriver",
-  "perl": "6.d",
   "provides": {
     "LogP6::Writer::StackDriver": "lib/LogP6/Writer/StackDriver.pm6",
     "LogP6::WriterConf::StackDriver": "lib/LogP6/WriterConf/StackDriver.pm6"
   },
+  "raku": null,
   "resources": [
   ],
   "source-url": "git://github.com/rbt/raku-LogP6-Writer-StackDriver.git",
@@ -34,5 +34,5 @@
   "test-depends": [
     "Test"
   ],
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
